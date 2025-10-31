@@ -1,20 +1,27 @@
 @echo off
 setlocal EnableDelayedExpansion
-set "KEY=HKCU\Software\Microsoft\Office\16.0\PowerPoint\Options"
+
 set "VALUE=PersonalTemplates"
-set "Data="
+set "VERSION=16.0"
 
-echo Revisando la clave del Registro: "%KEY%"
+for %%A in (PowerPoint Word Excel) do (
+    set "KEY=HKCU\Software\Microsoft\Office\%VERSION%\%%A\Options"
+    set "Data="
 
-for /f "skip=2 tokens=1,2,*" %%A in ('reg query "%KEY%" /v "%VALUE%" 2^>nul') do (
-    set "Data=%%C"
-)
+    echo Revisando la clave del Registro: "!KEY!"
 
-if defined Data (
-    echo %VALUE% = !Data!
-) else (
-    echo No se pudo encontrar el valor "%VALUE%" en "%KEY%".
-    exit /b 1
+    for /f "skip=2 tokens=1,2,*" %%B in ('reg query "!KEY!" /v "%VALUE%" 2^>nul') do (
+        set "Data=%%D"
+    )
+
+    if defined Data (
+        echo %VALUE% = !Data!
+    ) else (
+        echo No se pudo encontrar el valor "%VALUE%" en "!KEY!".
+    )
+
+    echo.
 )
 
 endlocal
+pause
