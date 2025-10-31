@@ -248,8 +248,25 @@ set "EXCEL_PATH="
 set "WORD_PATH_FALLBACK=0"
 set "PPT_PATH_FALLBACK=0"
 set "EXCEL_PATH_FALLBACK=0"
-set "DEFAULT_CUSTOM_DIR=%USERPROFILE%\Documents\Custom Office Templates"
+set "DEFAULT_CUSTOM_DIR="
+set "DEFAULT_CUSTOM_DIR_CREATED=0"
+set "DOCUMENTS_PATH="
 set "OFFICE_VERSIONS=16.0 15.0 14.0 12.0"
+
+for /f "delims=" %%D in ('powershell -NoLogo -Command "$path=(Get-ItemProperty -Path \"HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders\" -Name Personal -ErrorAction SilentlyContinue).Personal; if ($path) {[Environment]::ExpandEnvironmentVariables($path)}"') do set "DOCUMENTS_PATH=%%D"
+
+if defined DOCUMENTS_PATH (
+    if "!DOCUMENTS_PATH:~-1!"=="\" set "DOCUMENTS_PATH=!DOCUMENTS_PATH:~0,-1!"
+    set "DEFAULT_CUSTOM_DIR=!DOCUMENTS_PATH!\Custom Templates"
+) else (
+    set "DEFAULT_CUSTOM_DIR=%USERPROFILE%\Documents\Custom Templates"
+)
+
+if not defined DEFAULT_CUSTOM_DIR set "DEFAULT_CUSTOM_DIR=%USERPROFILE%\Documents\Custom Templates"
+if defined DEFAULT_CUSTOM_DIR if not exist "!DEFAULT_CUSTOM_DIR!" (
+    mkdir "!DEFAULT_CUSTOM_DIR!" >nul 2>&1
+    if not errorlevel 1 set "DEFAULT_CUSTOM_DIR_CREATED=1"
+)
 
 for %%V in (!OFFICE_VERSIONS!) do (
     if not defined WORD_PATH (
@@ -287,15 +304,15 @@ for %%V in (!OFFICE_VERSIONS!) do (
     )
 )
 
-if not defined WORD_PATH if exist "!DEFAULT_CUSTOM_DIR!" (
+if not defined WORD_PATH if defined DEFAULT_CUSTOM_DIR (
     set "WORD_PATH=!DEFAULT_CUSTOM_DIR!"
     set "WORD_PATH_FALLBACK=1"
 )
-if not defined PPT_PATH if exist "!DEFAULT_CUSTOM_DIR!" (
+if not defined PPT_PATH if defined DEFAULT_CUSTOM_DIR (
     set "PPT_PATH=!DEFAULT_CUSTOM_DIR!"
     set "PPT_PATH_FALLBACK=1"
 )
-if not defined EXCEL_PATH if exist "!DEFAULT_CUSTOM_DIR!" (
+if not defined EXCEL_PATH if defined DEFAULT_CUSTOM_DIR (
     set "EXCEL_PATH=!DEFAULT_CUSTOM_DIR!"
     set "EXCEL_PATH_FALLBACK=1"
 )
@@ -305,6 +322,9 @@ call :CleanPath PPT_PATH
 call :CleanPath EXCEL_PATH
 
 if /I "!DESIGN_MODE!"=="true" (
+    if "!DEFAULT_CUSTOM_DIR_CREATED!"=="1" (
+        echo [INFO] Created default "Custom Templates" folder at: !DEFAULT_CUSTOM_DIR!
+    )
     if defined WORD_PATH (
         if "!WORD_PATH_FALLBACK!"=="1" (
             echo [INFO] Word templates folder defaulted to: !WORD_PATH!
@@ -335,6 +355,7 @@ if /I "!DESIGN_MODE!"=="true" (
 )
 
 if defined LOG_FILE (
+    if "!DEFAULT_CUSTOM_DIR_CREATED!"=="1" echo [%DATE% %TIME%] Created default "Custom Templates" folder at: !DEFAULT_CUSTOM_DIR! >> "!LOG_FILE!"
     if defined WORD_PATH  echo [%DATE% %TIME%] Word templates folder detected or defaulted: !WORD_PATH! >> "!LOG_FILE!"
     if not defined WORD_PATH echo [%DATE% %TIME%] Word templates folder not found in registry. >> "!LOG_FILE!"
     if defined WORD_PATH if "!WORD_PATH_FALLBACK!"=="1" echo [%DATE% %TIME%] Word templates folder defaulted to user documents. >> "!LOG_FILE!"
