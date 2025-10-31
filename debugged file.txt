@@ -1,0 +1,196 @@
+C:\Users\ricar\OneDrive - Grada\Agencia\Producción\0 Herramientas\1.0 Aplicaciones\0.0 Instalador de plantillas de Office\YYYY.MM.DD.hhmm>rem _Main_installer.bat
+Executing. Please wait...
+[DEBUG] Design mode is enabled.
+[INFO] Script is running from: C:\Users\ricar\OneDrive - Grada\Agencia\Producción\0 Herramientas\1.0 Aplicaciones\0.0 Instalador de plantillas de Office\YYYY.MM.DD.hhmm\
+
+[INFO] Verifying environment and closing Office applications...
+[OK] Environment verification and Office app closure completed.
+
+[INFO] Starting base template installation phase...
+[ERROR] Source file not found: "C:\Users\ricar\OneDrive - Grada\Agencia\Producción\0 Herramientas\1.0 Aplicaciones\0.0 Instalador de plantillas de Office\YYYY.MM.DD.hhmm\Normal.dotx"
+[BACKUP] Created for WORD template at "C:\Users\ricar\AppData\Roaming\Microsoft\Templates\Normal_backup.dotm"
+[OK] Installed WORD template at "C:\Users\ricar\AppData\Roaming\Microsoft\Templates\Normal.dotm"
+[BACKUP] Created for POWERPOINT template at "C:\Users\ricar\AppData\Roaming\Microsoft\Templates\Blank_backup.potx"
+[OK] Installed POWERPOINT template at "C:\Users\ricar\AppData\Roaming\Microsoft\Templates\Blank.potx"
+[ERROR] Source file not found: "C:\Users\ricar\OneDrive - Grada\Agencia\Producción\0 Herramientas\1.0 Aplicaciones\0.0 Instalador de plantillas de Office\YYYY.MM.DD.hhmm\Blank.potm"
+[BACKUP] Created for EXCEL template at "C:\Users\ricar\AppData\Roaming\Microsoft\Excel\XLSTART\Book_backup.xltx"
+[OK] Installed EXCEL template at "C:\Users\ricar\AppData\Roaming\Microsoft\Excel\XLSTART\Book.xltx"
+[ERROR] Source file not found: "C:\Users\ricar\OneDrive - Grada\Agencia\Producción\0 Herramientas\1.0 Aplicaciones\0.0 Instalador de plantillas de Office\YYYY.MM.DD.hhmm\Book.xltm"
+[BACKUP] Created for EXCEL template at "C:\Users\ricar\AppData\Roaming\Microsoft\Excel\XLSTART\Sheet_backup.xltx"
+[OK] Installed EXCEL template at "C:\Users\ricar\AppData\Roaming\Microsoft\Excel\XLSTART\Sheet.xltx"
+[ERROR] Source file not found: "C:\Users\ricar\OneDrive - Grada\Agencia\Producción\0 Herramientas\1.0 Aplicaciones\0.0 Instalador de plantillas de Office\YYYY.MM.DD.hhmm\Sheet.xltm"
+
+[INFO] Detecting Office personal template folders...
+[WARNING] No Word templates folder detected from registry.
+[DEBUG] PowerPoint templates folder detected: C:\Users\ricar\OneDrive\Mis documentos\Custom Office Templates\
+[WARNING] No Excel templates folder detected from registry.
+
+[INFO] Starting custom template copy phase...
+[DEBUG] copy_templates.bat started
+[INFO] Script running from: C:\Users\ricar\OneDrive - Grada\Agencia\Producción\0 Herramientas\1.0 Aplicaciones\0.0 Instalador de plantillas de Office\YYYY.MM.DD.hhmm\
+[INFO] Arguments: "C:\Users\ricar\OneDrive - Grada\Agencia\Producción\0 Herramientas\1.0 Aplicaciones\0.0 Instalador de plantillas de Office\YYYY.MM.DD.hhmm\logs\install_log_all.txt" "C:\Users\ricar\OneDrive - Grada\Agencia\Producción\0 Herramientas\1.0 Aplicaciones\0.0 Instalador de plantillas de Office\YYYY.MM.DD.hhmm\" "true"
+
+
+[DEBUG] === Template destinations received ===
+  WORD_PATH =
+  PPT_PATH  = C:\Users\ricar\OneDrive\Mis documentos\Custom Office Templates
+  EXCEL_PATH=
+[DEBUG] ==================================
+
+[DEBUG] PowerPoint MRU detected: HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU
+[DEBUG] Word MRU detected: HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Word\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU
+[DEBUG] Excel MRU detected: HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Excel\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU
+
+[INFO] Searching templates in "C:\Users\ricar\OneDrive - Grada\Agencia\Producción\0 Herramientas\1.0 Aplicaciones\0.0 Instalador de plantillas de Office\YYYY.MM.DD.hhmm\"...
+-----------------------------------------------
+Normal.dotm
+The blank document.dotx
+The document template.dotx
+Blank.potx
+The blank presentation.potx
+The presentation template.potx
+Book.xltx
+Sheet.xltx
+The blank workbook.xltx
+The spreadsheet template.xltx
+-----------------------------------------------
+
+[DEBUG] Verifying destination paths...
+[ERROR] Missing folder:
+[OK] Valid folder: C:\Users\ricar\OneDrive\Mis documentos\Custom Office Templates
+[ERROR] Missing folder:
+
+[DEBUG] Starting file copy stage...
+[DEBUG] BASE_DIR = "C:\Users\ricar\OneDrive - Grada\Agencia\Producción\0 Herramientas\1.0 Aplicaciones\0.0 Instalador de plantillas de Office\YYYY.MM.DD.hhmm\"
+-----------------------------------------------
+
+[DEBUG] Processing file: The blank document.dotx
+[DEBUG] Extension detected: .dotx
+[WARNING] No destination assigned for The blank document.dotx
+-----------------------------------------------
+
+[DEBUG] Processing file: The document template.dotx
+[DEBUG] Extension detected: .dotx
+[WARNING] No destination assigned for The document template.dotx
+-----------------------------------------------
+
+[DEBUG] Processing file: Normal.dotm
+[DEBUG] Extension detected: .dotm
+[INFO] Skipped generic file: Normal.dotm
+-----------------------------------------------
+
+[DEBUG] Processing file: Blank.potx
+[DEBUG] Extension detected: .potx
+[INFO] Skipped generic file: Blank.potx
+-----------------------------------------------
+
+[DEBUG] Processing file: The blank presentation.potx
+[DEBUG] Extension detected: .potx
+[DEBUG] Destination assigned: C:\Users\ricar\OneDrive\Mis documentos\Custom Office Templates
+[ACTION] Copying The blank presentation.potx → C:\Users\ricar\OneDrive\Mis documentos\Custom Office Templates
+[OK] Successfully copied: The blank presentation.potx
+/** template copied
+[DEBUG] Ajustando índices MRU para PowerPoint...
+[DEBUG] Renombrando "Item Metadata 12" a "Item Metadata 13" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 12" a "Item 13" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 11" a "Item Metadata 12" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 11" a "Item 12" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 10" a "Item Metadata 11" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 10" a "Item 11" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 9" a "Item Metadata 10" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 9" a "Item 10" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 8" a "Item Metadata 9" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 8" a "Item 9" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 7" a "Item Metadata 8" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 7" a "Item 8" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 6" a "Item Metadata 7" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 6" a "Item 7" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 5" a "Item Metadata 6" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 5" a "Item 6" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 4" a "Item Metadata 5" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 4" a "Item 5" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 3" a "Item Metadata 4" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 3" a "Item 4" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 2" a "Item Metadata 3" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 2" a "Item 3" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 1" a "Item Metadata 2" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 1" a "Item 2" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Reindexado MRU completado para PowerPoint.
+[DEBUG] Escribiendo Item 1 en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU"
+[OK] Item 1 agregado correctamente
+[DEBUG] Escribiendo Item Metadata 1 en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU"
+[OK] Item Metadata 1 agregado correctamente
+-----------------------------------------------
+
+[DEBUG] Processing file: The presentation template.potx
+[DEBUG] Extension detected: .potx
+[DEBUG] Destination assigned: C:\Users\ricar\OneDrive\Mis documentos\Custom Office Templates
+[ACTION] Copying The presentation template.potx → C:\Users\ricar\OneDrive\Mis documentos\Custom Office Templates
+[OK] Successfully copied: The presentation template.potx
+/** template copied
+[DEBUG] Ajustando índices MRU para PowerPoint...
+[DEBUG] Renombrando "Item Metadata 13" a "Item Metadata 14" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 13" a "Item 14" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 12" a "Item Metadata 13" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 12" a "Item 13" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 11" a "Item Metadata 12" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 11" a "Item 12" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 10" a "Item Metadata 11" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 10" a "Item 11" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 9" a "Item Metadata 10" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 9" a "Item 10" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 8" a "Item Metadata 9" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 8" a "Item 9" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 7" a "Item Metadata 8" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 7" a "Item 8" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 6" a "Item Metadata 7" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 6" a "Item 7" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 5" a "Item Metadata 6" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 5" a "Item 6" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 4" a "Item Metadata 5" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 4" a "Item 5" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 3" a "Item Metadata 4" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 3" a "Item 4" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 2" a "Item Metadata 3" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 2" a "Item 3" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item Metadata 1" a "Item Metadata 2" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Renombrando "Item 1" a "Item 2" en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU" para PowerPoint.
+[DEBUG] Reindexado MRU completado para PowerPoint.
+[DEBUG] Escribiendo Item 1 en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU"
+[OK] Item 1 agregado correctamente
+[DEBUG] Escribiendo Item Metadata 1 en "HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\PowerPoint\Recent Templates\ADAL_92A9FCF6D3D0DFD26A8A9DE9C706259F15E5FC1A9C2352351512F0AB809022A5\File MRU"
+[OK] Item Metadata 1 agregado correctamente
+-----------------------------------------------
+
+[DEBUG] Processing file: Book.xltx
+[DEBUG] Extension detected: .xltx
+[INFO] Skipped generic file: Book.xltx
+-----------------------------------------------
+
+[DEBUG] Processing file: Sheet.xltx
+[DEBUG] Extension detected: .xltx
+[INFO] Skipped generic file: Sheet.xltx
+-----------------------------------------------
+
+[DEBUG] Processing file: The blank workbook.xltx
+[DEBUG] Extension detected: .xltx
+[WARNING] No destination assigned for The blank workbook.xltx
+-----------------------------------------------
+
+[DEBUG] Processing file: The spreadsheet template.xltx
+[DEBUG] Extension detected: .xltx
+[WARNING] No destination assigned for The spreadsheet template.xltx
+-----------------------------------------------
+[DEBUG] Copy loop finished
+[DEBUG] TOTAL_FILES=2 TOTAL_ERRORS=0
+
+[FINAL] Copy phase completed.
+  Files copied: 2
+  Files with errors: 0
+----------------------------------------------------------
+
+
+[FINAL] Universal Office Template installation completed successfully.
+Log file saved at: "C:\Users\ricar\OneDrive - Grada\Agencia\Producción\0 Herramientas\1.0 Aplicaciones\0.0 Instalador de plantillas de Office\YYYY.MM.DD.hhmm\logs\install_log_all.txt"
+----------------------------------------------------
+Press any key to continue . . .
